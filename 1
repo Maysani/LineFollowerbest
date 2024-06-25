@@ -89,12 +89,12 @@ void loop() {
 
 void MoveForward(void) {
   analogWrite(ENA, 170);
-  analogWrite(ENB, 160);
+  analogWrite(ENB, 165);
   digitalWrite(LM1, LOW);
   digitalWrite(LM2, HIGH);
   digitalWrite(RM1, LOW);
   digitalWrite(RM2, HIGH);
-  delay(35);
+  delay(10);
 }
 
 void MoveBack(void) {
@@ -108,45 +108,43 @@ void MoveBack(void) {
 }
 
 void MoveSRight(void) {
-  analogWrite(ENA, 165);
-  analogWrite(ENB, 130);
+  analogWrite(ENA, 130);
+  analogWrite(ENB, 170);
   digitalWrite(LM1, HIGH);
   digitalWrite(LM2, LOW);
   digitalWrite(RM1, LOW);
   digitalWrite(RM2, HIGH);
-  delay(130);
+  delay(100);
 }
 
 void MoveSLeft(void) {
-  analogWrite(ENA, 165);
+  analogWrite(ENA, 170);
   analogWrite(ENB, 130);
   digitalWrite(LM1, LOW);
   digitalWrite(LM2, HIGH);
   digitalWrite(RM1, HIGH); 
   digitalWrite(RM2, LOW);
-  delay(130);
+  delay(100);
   
 }
 
 void MoveRight(void) {
-  analogWrite(ENA, 140);
-  analogWrite(ENB, 140);
+  analogWrite(ENA, 130);
+  analogWrite(ENB, 130);
   digitalWrite(LM1, LOW); 
   digitalWrite(LM2, LOW);
   digitalWrite(RM1, LOW);
   digitalWrite(RM2, HIGH);
-  delay(5);
   
 }
 
 void MoveLeft(void) {
-  analogWrite(ENA, 140);
-  analogWrite(ENB, 140);
+  analogWrite(ENA, 130);
+  analogWrite(ENB, 130);
   digitalWrite(LM1, LOW);
   digitalWrite(LM2, HIGH);
   digitalWrite(RM1, LOW); 
   digitalWrite(RM2, LOW);
-  delay(5);
 }
 
 void Stop(void) {
@@ -156,5 +154,5 @@ void Stop(void) {
   digitalWrite(LM2, LOW);
   digitalWrite(RM1, LOW);
   digitalWrite(RM2, LOW);
-  delay(10);
+  delay(20);
 }
