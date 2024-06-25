@@ -49,10 +49,6 @@ void setup() {
 }
 
 void loop() {
-  // Use analogWrite to run motor at adjusted speed
-  // analogWrite(ENA, 140);
-  // analogWrite(ENB, 155);
-
   Sensor1 = analogRead(Out1);
   Sensor2 = analogRead(Out2);
   Sensor3 = analogRead(Out3);
@@ -92,7 +88,7 @@ void loop() {
 }
 
 void MoveForward(void) {
-  analogWrite(ENA, 175);
+  analogWrite(ENA, 170);
   analogWrite(ENB, 160);
   digitalWrite(LM1, LOW);
   digitalWrite(LM2, HIGH);
@@ -112,23 +108,23 @@ void MoveBack(void) {
 }
 
 void MoveSRight(void) {
-  analogWrite(ENA, 170);
+  analogWrite(ENA, 165);
   analogWrite(ENB, 130);
   digitalWrite(LM1, HIGH);
   digitalWrite(LM2, LOW);
   digitalWrite(RM1, LOW);
-  digitalWrite(RM2, HIGH;
-  delay(100);
+  digitalWrite(RM2, HIGH);
+  delay(130);
 }
 
 void MoveSLeft(void) {
-  analogWrite(ENA, 170);
+  analogWrite(ENA, 165);
   analogWrite(ENB, 130);
   digitalWrite(LM1, LOW);
   digitalWrite(LM2, HIGH);
   digitalWrite(RM1, HIGH); 
   digitalWrite(RM2, LOW);
-  delay(100);
+  delay(130);
   
 }
 
