@@ -104,27 +104,27 @@ void MoveBack(void) {
   digitalWrite(LM2, LOW);
   digitalWrite(RM1, HIGH);
   digitalWrite(RM2, LOW);
-  delay(800);
+  delay(1100);
 }
 
 void MoveSRight(void) {
-  analogWrite(ENA, 130);
-  analogWrite(ENB, 170);
+  analogWrite(ENA, 140);
+  analogWrite(ENB, 200);
   digitalWrite(LM1, HIGH);
   digitalWrite(LM2, LOW);
   digitalWrite(RM1, LOW);
   digitalWrite(RM2, HIGH);
-  delay(100);
+  delay(40);
 }
 
 void MoveSLeft(void) {
-  analogWrite(ENA, 170);
-  analogWrite(ENB, 130);
+  analogWrite(ENA, 200);
+  analogWrite(ENB, 140);
   digitalWrite(LM1, LOW);
   digitalWrite(LM2, HIGH);
   digitalWrite(RM1, HIGH); 
   digitalWrite(RM2, LOW);
-  delay(100);
+  delay(40);
   
 }
 
